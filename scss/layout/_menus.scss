@@ -1,0 +1,215 @@
+.menu-container {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-gap: 5px;
+  margin: 5px 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-style: dotted;
+  border-color: $crumbly-burger-red;
+
+  span {
+    font-size: 8px;
+    color: black;
+  }
+
+  .header {
+    grid-column: auto / span 2;
+    font-size: 24px;
+    color: $crumbly-burger-red;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: $crumbly-burger-dark-red;
+    
+    }
+  }
+
+  .sub-header {
+    font-size: 18px;
+    color: $crumbly-burger-red;
+    text-align: center;
+  }
+
+  .favorites {
+    padding: 5px;
+    font-size: 12px;
+    color: $crumbly-burger-red;
+
+    .menu-item p {
+      display: inline-block;
+      padding: 5px 5px 0 0;
+    }
+
+    .food-item {
+      text-align: left;
+      width: 45%;
+      line-height: 1rem;
+    }
+
+    .food-item-xtra {
+      text-align: right;
+      width: 15%;
+    }
+
+    .price-solo {
+      text-align: right;
+      width: 15%;
+    }
+    
+    .price-meal {
+      text-align: right;
+      width: 15%;
+    }
+  }
+
+  .ice-cream {
+    padding: 5px;
+    font-size: 12px;
+    color: $crumbly-burger-red;
+
+    .menu-item p {
+      display: inline-block;
+      padding: 5px 5px 0 0;
+    }
+
+    .food-item {
+      text-align: left;
+      width: 42%;
+      line-height: 1rem;
+      text-decoration: underline;
+    }
+
+    .kids {
+      text-align: right;
+      width: 12%
+    }
+
+    .small {
+      text-align: right;
+      width: 12%;
+    }
+
+    .medium {
+      text-align: right;
+      width: 12%;
+    }
+    
+    .large {
+      text-align: right;
+      width: 12%;
+    }
+  }
+
+  .right {
+    padding: 5px;
+    font-size: 12px;
+    color: $crumbly-burger-red;
+
+    .menu-item p {
+      display: inline-block;
+      padding: 5px 5px 0 0;
+    }
+
+    .side-item {
+      text-align: left;
+      width: 40%;
+      line-height: 1rem;
+    }
+
+    .small {
+      text-align: right;
+      width: 17%;
+    }
+    
+    .medium {
+      text-align: right;
+      width: 17%;
+    }
+    
+    .large {
+      text-align: right;
+      width: 17%;
+    }
+  }
+
+  @include mq(768px) {
+    .favorites {
+      .food-item {
+      width: 55%;
+      }
+
+      .food-item-xtra {
+        text-align: right;
+        width: 12%;
+      }
+
+      .price-solo {
+        text-align: right;
+        width: 12%;
+      }
+      
+      .price-meal {
+        text-align: right;
+        width: 12%;
+      }
+    }
+    
+  }
+
+  @include mq(1200px) {
+    grid-template-columns: 50% 50%;
+
+    .header {
+      font-size: 36px;
+    }
+
+    .sub-header {
+      font-size: 24px;
+    }
+    
+    span {
+      font-size: 12px;
+    }
+
+    .left {
+      font-size: 20px;
+    
+      .food-item.sauces {
+        text-align: left;
+        width: 80%;
+      }
+    }
+    
+    .ice-cream {
+      .food-item {
+      width: 55%;
+      }
+    
+      .kids {
+        width: 8%
+      }
+  
+      .small {
+        width: 8%;
+      }
+  
+      .medium {
+        width: 8%;
+      }
+      
+      .large {
+        width: 8%;
+      }
+    }
+
+
+
+
+    .right {
+      font-size: 20px;
+    }
+
+  }
+}

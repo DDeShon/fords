@@ -1,0 +1,29 @@
+.hours-card {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-style: dotted;
+  border-color: $crumbly-burger-red;
+  height: 200px;
+  width: 350px;
+ 
+
+  @include mq(768px) {
+    height: 500px;
+    width: 400px;
+    margin: auto;
+  }
+
+  @include mq(1024px) {
+    height: 700px;
+    width: 700px;
+  }
+
+  p {
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    color: $crumbly-burger-red;
+
+    @include mq(1024px) {
+      font-size: 2rem;
+    }
+  }
+}

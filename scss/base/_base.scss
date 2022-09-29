@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $crumbly-burger-red;
+  background-image: url("../../dist/media/crumbly-burger.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 10px;
+  font-family: "Caveat Brush", cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
+  @include mq(768px) {
+    font-size: 20px;
+  }
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  @include flexCenter;
+  flex-direction: column;
+}

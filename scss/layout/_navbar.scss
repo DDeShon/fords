@@ -1,0 +1,68 @@
+#welcome {
+  display: grid;
+  grid-template-areas:
+    "welcome-nav"
+    "menu-container"
+    "menu-container";
+  width: 100%;
+
+  @include mq(768px) {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+.welcome-nav {
+  padding: 5px;
+
+  @include mq(768px) {
+    padding: 20px 50px 0 50px;
+  }
+}
+
+.logo {
+  display: grid;
+  margin-bottom: 50px;
+
+  img {
+    height: 150px;
+
+    @include mq(768px) {
+      width: 100%;
+    }
+  }
+}
+
+.nav {
+  margin: 2rem 0;
+}
+
+.nav-item {
+  list-style: none;
+  margin-bottom: 2rem;
+
+  a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    transition: color 0.4s ease-in-out;
+  }
+}
+
+.nav-item a:hover {
+  color: $crumbly-burger-red;
+}
+
+.location {
+  line-height: 1.4rem;
+
+  .address {
+    margin-bottom: 1rem;
+  }
+
+  .phone-number a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
