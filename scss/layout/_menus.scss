@@ -6,7 +6,7 @@
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.6);
   border-style: dotted;
-  border-color: $crumbly-burger-red;
+  border-color: $fords-red;
 
   span {
     font-size: 8px;
@@ -16,26 +16,26 @@
   .header {
     grid-column: auto / span 2;
     font-size: 24px;
-    color: $crumbly-burger-red;
+    color: $fords-red;
     text-align: center;
 
     a {
       text-decoration: none;
-      color: $crumbly-burger-dark-red;
+      color: $fords-dark-red;
     
     }
   }
 
   .sub-header {
     font-size: 18px;
-    color: $crumbly-burger-red;
+    color: $fords-red;
     text-align: center;
   }
 
   .favorites {
     padding: 5px;
     font-size: 12px;
-    color: $crumbly-burger-red;
+    color: $fords-red;
 
     .menu-item p {
       display: inline-block;
@@ -67,7 +67,7 @@
   .ice-cream {
     padding: 5px;
     font-size: 12px;
-    color: $crumbly-burger-red;
+    color: $fords-red;
 
     .menu-item p {
       display: inline-block;
@@ -105,7 +105,7 @@
   .right {
     padding: 5px;
     font-size: 12px;
-    color: $crumbly-burger-red;
+    color: $fords-red;
 
     .menu-item p {
       display: inline-block;
